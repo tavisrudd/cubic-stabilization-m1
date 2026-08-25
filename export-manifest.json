@@ -76,7 +76,7 @@
       "mode": "100644",
       "path": "PROVENANCE.md",
       "role": "provenance",
-      "sha256": "91eaa916fa2796c1fe25e77bc32e552c8da125fb5670ee32bf850cb7f4ec5415",
+      "sha256": "7b7c521749a4f1fa8c4fa01fab427d2563f9457d6877f2d39fb45d4b7af40a9c",
       "source_blob": null
     },
     {
@@ -350,13 +350,13 @@
       "source_blob": "9c425c26718995102f09f1f08b3c00621140748c"
     },
     {
-      "bytes": 134174,
+      "bytes": 134416,
       "mode": "100644",
       "path": "irrationality_after_one_stabilization.pdf",
       "rewrites": [],
       "role": "release-output",
-      "sha256": "a57e85cdc3522d484585e11fb8a8b2ff31eb272abad6dace60e6b611b1a0c6c8",
-      "source_blob": "45ee7299b883bfeb72a1f85693ed87189a6d9630"
+      "sha256": "ea18da6e8766b553b65297abe2d06ebf8d5568c45726b252ae6d3d7cdb64a74d",
+      "source_blob": "dc63ebb9c81f0d566528b5aaf6177c7b4c3b8a49"
     },
     {
       "bytes": 8,
@@ -2141,13 +2141,13 @@
       "source_blob": "aa81bb296fd3370311dd026e6d33a0fd02bd1924"
     },
     {
-      "bytes": 31512,
+      "bytes": 31868,
       "mode": "100644",
       "path": "sections/02-qdm-marker.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "9974b059da5a445310d6975b5021aa61f3bd3f5c83f0973ab1821f018e503cff",
-      "source_blob": "e656f422054c472bb747ffa0847530ad7ac10a50"
+      "sha256": "644304d2c56da4bf8849ea8fed2db775aa87cdbe95b50d873003260b9bddf768",
+      "source_blob": "6c0696c4f68c033cdcdc0cbcff427748f1d39b5c"
     },
     {
       "bytes": 3456,
@@ -2330,13 +2330,13 @@
       "source_blob": "51143d0559ac78c2254676e225704df150b31d16"
     },
     {
-      "bytes": 27783,
+      "bytes": 27949,
       "mode": "100644",
       "path": "verification/imported-sources.json",
       "rewrites": [],
       "role": "verification",
-      "sha256": "1ba4e8930271dda2116d8dccc7ef6be9af05942059edfd3f791ccbfe2b0b93a8",
-      "source_blob": "9450cae3bf2eb4b340a5296ffa00bc46f9c527a4"
+      "sha256": "d69b3dc13c77f8c5f1269c33201dec9915c8179711bf407df24595c2e0348792",
+      "source_blob": "ec540d94dc07bbc805ee48558f3503b6dfdc2c39"
     },
     {
       "bytes": 4354,
@@ -2370,5 +2370,5 @@
   "repository": "cubic-stabilization-m1",
   "repository_map_sha256": "34498ac7fb13d970c5548a069ff053c3ccceccef5650c47babe55a75e511c4df",
   "schema_version": 1,
-  "source_commit": "ff6354c475d21908e4b7e717c02c15579ce7e45b"
+  "source_commit": "404eed48d4dea84434204f18b3fc5d738bd0a0a0"
 }
