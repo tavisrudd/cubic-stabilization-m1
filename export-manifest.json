@@ -1,5 +1,5 @@
 {
-  "content_sha256": "ba49319c0652ec08d2b629284b32e9e47cb44cd04928e99c684f5e442b7d5ecc",
+  "content_sha256": "e97fa824ca63d77de82ca39ef7e804b186dccc36f64bc066c1fd41d940109e05",
   "excluded_path_count": 1,
   "excluded_release_outputs": [],
   "excluded_symlinks": [],
@@ -76,7 +76,7 @@
       "mode": "100644",
       "path": "PROVENANCE.md",
       "role": "provenance",
-      "sha256": "7d396f0de0a2832b1f2af6c2ae0eb2f1472363325cfe080e9ed5af1524ccec5a",
+      "sha256": "46e4fa3c9e901cadb1569fc33ea4ddc844a70f8385159ce8cc9815db5020c546",
       "source_blob": null
     },
     {
@@ -350,13 +350,13 @@
       "source_blob": "9c425c26718995102f09f1f08b3c00621140748c"
     },
     {
-      "bytes": 146689,
+      "bytes": 146875,
       "mode": "100644",
       "path": "irrationality_after_one_stabilization.pdf",
       "rewrites": [],
       "role": "release-output",
-      "sha256": "d87eb4aa2845851d3138d15d8f4d79e859f9cd015856dbab3cf489ef78a577bf",
-      "source_blob": "7eea54fc41af57836eede64ef8c6e9f91be4b025"
+      "sha256": "4fc685bbbd94caa1ede01a6b0d27a546b8d6baeb8f17adf0fdf9393bd95bc51d",
+      "source_blob": "e1b8269fdbb28a56cc886a570a4c7ffe7201d968"
     },
     {
       "bytes": 8,
@@ -2110,8 +2110,8 @@
       "path": "lean/verification/claims.json",
       "rewrites": [],
       "role": "verification",
-      "sha256": "7f38ca783ee524fd6993339e29ae97ea8ca8f654ede0a6f0665e6f5f3f08761e",
-      "source_blob": "030563a78410af1ab801bdc0460037359b87bab1"
+      "sha256": "c667dfc87091399ab657925eb324404ac070400a5dfef05a4fa0b06ce543e652",
+      "source_blob": "25ab7d4ac00159a17ab0847522624c3e181cac2d"
     },
     {
       "bytes": 43206,
@@ -2132,13 +2132,13 @@
       "source_blob": "ca74e5420ac1336a78618c8ef2273f78ff5e83c5"
     },
     {
-      "bytes": 9318,
+      "bytes": 9285,
       "mode": "100644",
       "path": "sections/01-introduction.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "c85c5e64892c4374b9351b2ea87671a9fae7c62c6ee95be0ddd19cc0494bfada",
-      "source_blob": "418b01610be4d2d7da2a333c3a29e1cb7859295f"
+      "sha256": "0b85be82d9d588e2b72a09276dea40b5c50c296481a2a6bcc735d53a36f07758",
+      "source_blob": "f9ce22f5de0dffc7e6478024b58e137c655a575a"
     },
     {
       "bytes": 33888,
