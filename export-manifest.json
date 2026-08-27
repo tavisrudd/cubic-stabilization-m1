@@ -1,5 +1,5 @@
 {
-  "content_sha256": "875a2dfff53f3d39fbab0578f983c6c735f0170b287546baea8080d4f1b65b2f",
+  "content_sha256": "8223d44b8a3bfedc5f85df453554d2f4a1cc4f73d5a33104b268cb5c3d637a3a",
   "excluded_path_count": 1,
   "excluded_release_outputs": [],
   "excluded_symlinks": [],
@@ -76,7 +76,7 @@
       "mode": "100644",
       "path": "PROVENANCE.md",
       "role": "provenance",
-      "sha256": "e6bf672b0b1af3b321a941869e186af7eff34b47f4e891b1f5d368a6686c75f8",
+      "sha256": "8a239663cda2677e6bf40ef4051371f5fb2992b4251c1656b4e76a5b7e6c134f",
       "source_blob": null
     },
     {
@@ -89,13 +89,13 @@
       "source_blob": "f2547f2e4ac6c4bd8758608a2fb817e4237d9226"
     },
     {
-      "bytes": 5855,
+      "bytes": 5871,
       "mode": "100644",
       "path": "REVIEWER_GUIDE.md",
       "rewrites": [],
       "role": "support",
-      "sha256": "1fb2c7e8756fc53574bcca0a43529227d6957355e960f5440bf1fac1d1d10fac",
-      "source_blob": "7f0ad22d38dce9c55b9f3d3c0f2d169d78a7037a"
+      "sha256": "a946ca5110d742a5803b32c57f49a62807877271eaa8fd96246c5c78dee06108",
+      "source_blob": "dbf14231a9205ac4ec42d651337005953d5929e1"
     },
     {
       "bytes": 926,
@@ -350,13 +350,13 @@
       "source_blob": "9c425c26718995102f09f1f08b3c00621140748c"
     },
     {
-      "bytes": 139727,
+      "bytes": 139860,
       "mode": "100644",
       "path": "irrationality_after_one_stabilization.pdf",
       "rewrites": [],
       "role": "release-output",
-      "sha256": "a99e8d09bd1877d30ff2f9b8f01658cd74adfbdd3509e82af127ec535cb04dd2",
-      "source_blob": "91c1f1ab0eee4a8b5d209287e5d46b160585c575"
+      "sha256": "7122f94bfaf9c6ea67e23189d9ca796af4404c80d348a2ccdeae17b294af1da9",
+      "source_blob": "dfb4f13e1e17ebd5a657c32d58cc1838f4417c16"
     },
     {
       "bytes": 8,
@@ -2141,13 +2141,13 @@
       "source_blob": "179cda1b46b13529a582a35cfe672f3c061300ad"
     },
     {
-      "bytes": 33698,
+      "bytes": 33713,
       "mode": "100644",
       "path": "sections/02-qdm-marker.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "e7ce595a35cb2d2e91ae97dfa48c84cef5cb78eb94f18ec709fc9188115c1dcf",
-      "source_blob": "b3ba8724f00e8e93dd7fc61f15a085fcb603b0ed"
+      "sha256": "7c94712fd2f7dde3903bbfbc1918eecc7accaad6bdf218f50864417c4cb29609",
+      "source_blob": "5aa3ca8683d7a278fdac4b2afbee02b10129f866"
     },
     {
       "bytes": 3646,
