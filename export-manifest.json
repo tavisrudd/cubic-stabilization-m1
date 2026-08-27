@@ -1,5 +1,5 @@
 {
-  "content_sha256": "e97fa824ca63d77de82ca39ef7e804b186dccc36f64bc066c1fd41d940109e05",
+  "content_sha256": "b15dbbc7d0c387080ad007c24f62a7df25e2791562ed6b7d6e23c41d2486a892",
   "excluded_path_count": 1,
   "excluded_release_outputs": [],
   "excluded_symlinks": [],
@@ -76,7 +76,7 @@
       "mode": "100644",
       "path": "PROVENANCE.md",
       "role": "provenance",
-      "sha256": "46e4fa3c9e901cadb1569fc33ea4ddc844a70f8385159ce8cc9815db5020c546",
+      "sha256": "757f11b700f0a8c57d196cb4f1c7546b005ce1105e596793ecff675608a88c27",
       "source_blob": null
     },
     {
@@ -350,13 +350,13 @@
       "source_blob": "9c425c26718995102f09f1f08b3c00621140748c"
     },
     {
-      "bytes": 146875,
+      "bytes": 146839,
       "mode": "100644",
       "path": "irrationality_after_one_stabilization.pdf",
       "rewrites": [],
       "role": "release-output",
-      "sha256": "4fc685bbbd94caa1ede01a6b0d27a546b8d6baeb8f17adf0fdf9393bd95bc51d",
-      "source_blob": "e1b8269fdbb28a56cc886a570a4c7ffe7201d968"
+      "sha256": "02ac7dc6c27c5ae54f5d94b2d488c6e4303174a242f04707cec43d8e1194ecb0",
+      "source_blob": "7d9771a85b7c288d4b0e549d79497edf1397175b"
     },
     {
       "bytes": 8,
@@ -2132,13 +2132,13 @@
       "source_blob": "ca74e5420ac1336a78618c8ef2273f78ff5e83c5"
     },
     {
-      "bytes": 9285,
+      "bytes": 9265,
       "mode": "100644",
       "path": "sections/01-introduction.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "0b85be82d9d588e2b72a09276dea40b5c50c296481a2a6bcc735d53a36f07758",
-      "source_blob": "f9ce22f5de0dffc7e6478024b58e137c655a575a"
+      "sha256": "5110f474ee3620f48de366fc7fb17b73eecc9ab92d5071a8147ad9bc1bd6b538",
+      "source_blob": "13ae9c3635087e4358876454fc4ee6abdb4fa2b4"
     },
     {
       "bytes": 33888,
