@@ -1,5 +1,5 @@
 {
-  "content_sha256": "80043d54cdd63f6b9fac1ed9de8b2f50b8829e200cfaf1e492eaf9581a9502b7",
+  "content_sha256": "93630269d5b6dbe1753faa81c6202d522c02d0331efc7f83ade94c0b15be7bf5",
   "excluded_path_count": 1,
   "excluded_release_outputs": [],
   "excluded_symlinks": [],
@@ -14,13 +14,13 @@
       "source_blob": "0ab77c52f6999bf07cdd298812f9647ed9847d6a"
     },
     {
-      "bytes": 1859,
+      "bytes": 1939,
       "mode": "100644",
       "path": ".zenodo.json",
       "rewrites": [],
       "role": "verification",
-      "sha256": "a9714e7356500fc8e7ed90cd700605d6407ab1ff21514cbc837c2b3c67ee99ce",
-      "source_blob": "a663031147dab5bcdd2f99eb5938d9855db0bbfb"
+      "sha256": "378adb9c011ff075a75dbd2c6f9d38563b9a47831801f2dfa22e403d1d615df9",
+      "source_blob": "462069772ea615dab72d78b7931e023e3b5dcf10"
     },
     {
       "bytes": 470,
@@ -76,26 +76,26 @@
       "mode": "100644",
       "path": "PROVENANCE.md",
       "role": "provenance",
-      "sha256": "c289123a709e2e9b1d0c14a53ee967a5360ecc3dd7e7adfbc0d4f937cde0b807",
+      "sha256": "2e2fd4d498c3853f9c40cc529345865d2bec7af6225055febc4eb03d32fd9f58",
       "source_blob": null
     },
     {
-      "bytes": 3836,
+      "bytes": 3884,
       "mode": "100644",
       "path": "README.md",
       "rewrites": [],
       "role": "support",
-      "sha256": "9f106c34b43fc31290ae3037749a033a2d803a2efb9778ee57e136a101a3aac3",
-      "source_blob": "86282eafedb136f4133f7687b7c406c5f7b570db"
+      "sha256": "083384b4ba81b3289933b07e55f713bae8b5f485d5fa78b5b6bf13a3db33f6f0",
+      "source_blob": "f2547f2e4ac6c4bd8758608a2fb817e4237d9226"
     },
     {
-      "bytes": 5748,
+      "bytes": 5855,
       "mode": "100644",
       "path": "REVIEWER_GUIDE.md",
       "rewrites": [],
       "role": "support",
-      "sha256": "ee0071401ff5f91b3c1f1d067b604f6253d64c8fd545a36445aa2c1aaa27ee98",
-      "source_blob": "729298a12a0b0e31fc6e3d7c37e2d504315931e9"
+      "sha256": "1fb2c7e8756fc53574bcca0a43529227d6957355e960f5440bf1fac1d1d10fac",
+      "source_blob": "7f0ad22d38dce9c55b9f3d3c0f2d169d78a7037a"
     },
     {
       "bytes": 926,
@@ -350,13 +350,13 @@
       "source_blob": "9c425c26718995102f09f1f08b3c00621140748c"
     },
     {
-      "bytes": 139565,
+      "bytes": 139727,
       "mode": "100644",
       "path": "irrationality_after_one_stabilization.pdf",
       "rewrites": [],
       "role": "release-output",
-      "sha256": "5994ee6d14971afb7bbc0248782af317f3a49e660217eed4e0a9aef850fb1c24",
-      "source_blob": "d604ef9d8200d22cd0a1e8f7a7a60acc8ebc20e1"
+      "sha256": "a99e8d09bd1877d30ff2f9b8f01658cd74adfbdd3509e82af127ec535cb04dd2",
+      "source_blob": "91c1f1ab0eee4a8b5d209287e5d46b160585c575"
     },
     {
       "bytes": 8,
@@ -2132,13 +2132,13 @@
       "source_blob": "ca74e5420ac1336a78618c8ef2273f78ff5e83c5"
     },
     {
-      "bytes": 7223,
+      "bytes": 7337,
       "mode": "100644",
       "path": "sections/01-introduction.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "59b4ddd32b11f030f9b707f5053372d39e7912e501ec7b4f7d6e58365e22f35d",
-      "source_blob": "6dddebc35e5e5740d71503cccbe344f912f2d13b"
+      "sha256": "57e0ad104f09baffd83e28224b6f68fb901c25a85272662e73f9a589ef682bde",
+      "source_blob": "179cda1b46b13529a582a35cfe672f3c061300ad"
     },
     {
       "bytes": 33698,
