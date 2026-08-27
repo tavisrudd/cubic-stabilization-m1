@@ -1,8 +1,8 @@
 {
+  "content_sha256": "2c1e576980558e27836b2147c369c9c400ef63a400d79a38ba4641c72ba0416d",
   "excluded_path_count": 1,
   "excluded_release_outputs": [],
   "excluded_symlinks": [],
-  "exporter_blob": "bc16a3f02957af1342e19dfe7fad78e003d8c5dc",
   "files": [
     {
       "bytes": 204,
@@ -72,11 +72,11 @@
       "source_blob": "6b5dbfeedc8e9b9632f3aec74fe8721baac00b33"
     },
     {
-      "bytes": 303,
+      "bytes": 508,
       "mode": "100644",
       "path": "PROVENANCE.md",
       "role": "provenance",
-      "sha256": "7b7c521749a4f1fa8c4fa01fab427d2563f9457d6877f2d39fb45d4b7af40a9c",
+      "sha256": "05c1e2948e63d1d383f0fa98ebb23add4273423e22bd913b295da95cb1d69bbd",
       "source_blob": null
     },
     {
@@ -314,13 +314,13 @@
       "source_blob": "60d47d553aa8496dec57a5a046e9c658028cf66c"
     },
     {
-      "bytes": 4985,
+      "bytes": 5164,
       "mode": "100644",
       "path": "cubic_stabilization_m1.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "3acfaf3400b27f24576faa6d8e7cb6a82f025d20af9f04ab720b99ffbc932c10",
-      "source_blob": "944b1ee58b8cb99c2a94d6ffc9baa910714a391b"
+      "sha256": "93892ee98d76e84528601b4b01b80eaff4c0b1f91cab2a9f8817aba06b99578c",
+      "source_blob": "ce9f7a3fa04499d06fe637b0a9260885e0b7f1cc"
     },
     {
       "bytes": 1090,
@@ -350,13 +350,13 @@
       "source_blob": "9c425c26718995102f09f1f08b3c00621140748c"
     },
     {
-      "bytes": 134416,
+      "bytes": 136210,
       "mode": "100644",
       "path": "irrationality_after_one_stabilization.pdf",
       "rewrites": [],
       "role": "release-output",
-      "sha256": "ea18da6e8766b553b65297abe2d06ebf8d5568c45726b252ae6d3d7cdb64a74d",
-      "source_blob": "dc63ebb9c81f0d566528b5aaf6177c7b4c3b8a49"
+      "sha256": "0a6640718590d42c969d6a0088922acd0575c1bf22455dade2a54e7e19689107",
+      "source_blob": "8b937c1435f8844508d01b097dffe849915c62b1"
     },
     {
       "bytes": 8,
@@ -2132,22 +2132,22 @@
       "source_blob": "ca74e5420ac1336a78618c8ef2273f78ff5e83c5"
     },
     {
-      "bytes": 6095,
+      "bytes": 6856,
       "mode": "100644",
       "path": "sections/01-introduction.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "11b8adc6241f5393c6cd3513337ab9e121144e5857afd30b43aba332518d9aae",
-      "source_blob": "aa81bb296fd3370311dd026e6d33a0fd02bd1924"
+      "sha256": "54cb24c32dcc9851701edfc65079f582364c2bb4dee26bb78f8696e771703168",
+      "source_blob": "29a2886285db6ec53937d45a54b57919e2329d7c"
     },
     {
-      "bytes": 31868,
+      "bytes": 31926,
       "mode": "100644",
       "path": "sections/02-qdm-marker.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "644304d2c56da4bf8849ea8fed2db775aa87cdbe95b50d873003260b9bddf768",
-      "source_blob": "6c0696c4f68c033cdcdc0cbcff427748f1d39b5c"
+      "sha256": "6e2af1d1f3f217813e4e17c9a808ccfac99d123255ce3f4606333acbbd584f35",
+      "source_blob": "c5d2ddd7b7dcfe28bdd9f5d562da6828e2050c10"
     },
     {
       "bytes": 3456,
@@ -2362,13 +2362,6 @@
     "cubic_stabilization_m1.tex"
   ],
   "manifest_self_excluded": true,
-  "paper_ids": [
-    "cubic_stabilization_m1"
-  ],
-  "paper_registry_sha256": "a78ad495a4099048d45a5e168a68300030515136b3ec3571e9a031d88b3232ea",
-  "release_output_policy": "legacy-unspecified",
   "repository": "cubic-stabilization-m1",
-  "repository_map_sha256": "34498ac7fb13d970c5548a069ff053c3ccceccef5650c47babe55a75e511c4df",
-  "schema_version": 1,
-  "source_commit": "404eed48d4dea84434204f18b3fc5d738bd0a0a0"
+  "schema_version": 1
 }
