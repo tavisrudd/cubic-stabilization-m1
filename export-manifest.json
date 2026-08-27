@@ -1,5 +1,5 @@
 {
-  "content_sha256": "4f5a1206a1ab013481fb5bf49e23cafde7c5067c0348b7ce6846f8af39301180",
+  "content_sha256": "4ed20a4522ba50b7c159d86ac7ec0c89f7319c5ce2b785ca9a7aee3093c3d103",
   "excluded_path_count": 1,
   "excluded_release_outputs": [],
   "excluded_symlinks": [],
@@ -76,26 +76,26 @@
       "mode": "100644",
       "path": "PROVENANCE.md",
       "role": "provenance",
-      "sha256": "f457d7d0b4b62a2a1574e5c894827aba03f135a1b7a5dcba9f86d2b9a53e4cae",
+      "sha256": "40f95a139143d04db6c60e52497517fd464667a52b37df309c803c15fdb542b4",
       "source_blob": null
     },
     {
-      "bytes": 3884,
+      "bytes": 4485,
       "mode": "100644",
       "path": "README.md",
       "rewrites": [],
       "role": "support",
-      "sha256": "083384b4ba81b3289933b07e55f713bae8b5f485d5fa78b5b6bf13a3db33f6f0",
-      "source_blob": "f2547f2e4ac6c4bd8758608a2fb817e4237d9226"
+      "sha256": "fee4aef870db56c38add664db40013fcc3a9f3ed81795a72dbf32081fbff1254",
+      "source_blob": "5d39b76ac151c98e96eb1fb2f2ef00b8836fab43"
     },
     {
-      "bytes": 5871,
+      "bytes": 6163,
       "mode": "100644",
       "path": "REVIEWER_GUIDE.md",
       "rewrites": [],
       "role": "support",
-      "sha256": "a946ca5110d742a5803b32c57f49a62807877271eaa8fd96246c5c78dee06108",
-      "source_blob": "dbf14231a9205ac4ec42d651337005953d5929e1"
+      "sha256": "7bbae6ba37180c4898ff3338514ccce55b13fa667ed92cc40fd3d337d15331fa",
+      "source_blob": "bf75c73779d85c8fd83fcea4e3b86a6a866e13bb"
     },
     {
       "bytes": 926,
@@ -314,13 +314,13 @@
       "source_blob": "60d47d553aa8496dec57a5a046e9c658028cf66c"
     },
     {
-      "bytes": 5159,
+      "bytes": 6924,
       "mode": "100644",
       "path": "cubic_stabilization_m1.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "1c4452c38cbfc07ccdb020e1e354197b9a1130f66c5705465637e43e40a4ae86",
-      "source_blob": "45fb91f38e72aedb1ce04afba4bdd6c5ad08184f"
+      "sha256": "57d7d79ea03219f754b83ed8cc13c48a737ca3eb9fe197c32ce4f1c9b33a02bd",
+      "source_blob": "3f15e62b849deb6f2f1e6c2525352b515139b5ab"
     },
     {
       "bytes": 1090,
@@ -350,13 +350,13 @@
       "source_blob": "9c425c26718995102f09f1f08b3c00621140748c"
     },
     {
-      "bytes": 139860,
+      "bytes": 146872,
       "mode": "100644",
       "path": "irrationality_after_one_stabilization.pdf",
       "rewrites": [],
       "role": "release-output",
-      "sha256": "7122f94bfaf9c6ea67e23189d9ca796af4404c80d348a2ccdeae17b294af1da9",
-      "source_blob": "dfb4f13e1e17ebd5a657c32d58cc1838f4417c16"
+      "sha256": "9fa47ea58a0c095e29becd1bb4890adb876357b36f2461ceb0b17b703d225239",
+      "source_blob": "3da6aefba19d5935a51677312779e8fe9ae945c9"
     },
     {
       "bytes": 8,
@@ -2105,13 +2105,13 @@
       "source_blob": "22885ed30ea81c9569854bd9af6e724e3d325504"
     },
     {
-      "bytes": 246252,
+      "bytes": 240900,
       "mode": "100644",
       "path": "lean/verification/claims.json",
       "rewrites": [],
       "role": "verification",
-      "sha256": "0c53e69c3d1535ab2ea1ecabb0db298df8a0f4bdca5a6532acb7db7681f66e62",
-      "source_blob": "4d3b7d5e4dff2e90476107aab9736ebbb07c3818"
+      "sha256": "7f38ca783ee524fd6993339e29ae97ea8ca8f654ede0a6f0665e6f5f3f08761e",
+      "source_blob": "030563a78410af1ab801bdc0460037359b87bab1"
     },
     {
       "bytes": 43206,
@@ -2132,22 +2132,22 @@
       "source_blob": "ca74e5420ac1336a78618c8ef2273f78ff5e83c5"
     },
     {
-      "bytes": 7337,
+      "bytes": 9320,
       "mode": "100644",
       "path": "sections/01-introduction.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "57e0ad104f09baffd83e28224b6f68fb901c25a85272662e73f9a589ef682bde",
-      "source_blob": "179cda1b46b13529a582a35cfe672f3c061300ad"
+      "sha256": "ec51759d81e4ed97d724f2165fb920d21e4c3707a4e08dd0d5d335fa55b959d5",
+      "source_blob": "4b62c3d2b74d2555ca965d71f97bb38f11a367e0"
     },
     {
-      "bytes": 33713,
+      "bytes": 33888,
       "mode": "100644",
       "path": "sections/02-qdm-marker.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "7c94712fd2f7dde3903bbfbc1918eecc7accaad6bdf218f50864417c4cb29609",
-      "source_blob": "5aa3ca8683d7a278fdac4b2afbee02b10129f866"
+      "sha256": "b60caf682bdc5468a2a89c2f6a84de3fdb531f859f8eb5d23a5c819cf2a75114",
+      "source_blob": "f94d9260843fbd12e7563f8f84a1217b132a28ae"
     },
     {
       "bytes": 3646,
@@ -2330,13 +2330,13 @@
       "source_blob": "51143d0559ac78c2254676e225704df150b31d16"
     },
     {
-      "bytes": 27949,
+      "bytes": 27587,
       "mode": "100644",
       "path": "verification/imported-sources.json",
       "rewrites": [],
       "role": "verification",
-      "sha256": "d69b3dc13c77f8c5f1269c33201dec9915c8179711bf407df24595c2e0348792",
-      "source_blob": "ec540d94dc07bbc805ee48558f3503b6dfdc2c39"
+      "sha256": "9f97bca7df458e1f21a33ce572e85efabce4f45c0ada5ea8dfd4459b2c7136c4",
+      "source_blob": "ffe5555357cc101c9a8e0fbb5557f8878d638fb6"
     },
     {
       "bytes": 4354,
