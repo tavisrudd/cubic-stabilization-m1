@@ -1,5 +1,5 @@
 {
-  "content_sha256": "4870e467e3c01ae9332b8bab9f1a0dc47ad849cb902632a7b096cfe6b60d10b4",
+  "content_sha256": "a7b69274f64748ab9c7b7e4ad91d5d8a1a580d11f84429087022b133d7de867e",
   "excluded_path_count": 1,
   "excluded_release_outputs": [],
   "excluded_symlinks": [],
@@ -76,7 +76,7 @@
       "mode": "100644",
       "path": "PROVENANCE.md",
       "role": "provenance",
-      "sha256": "9e380a7aa0ad6331bda5a61e42e6fb3b783dd005ad46573e1ea864197c2c1c3b",
+      "sha256": "0a49f45df95b912e20746f38d97c221d727e783258769224276aca986d892017",
       "source_blob": null
     },
     {
@@ -179,13 +179,13 @@
       "source_blob": "48fe1688b86d4e1feef1d929170e74cc8adff356"
     },
     {
-      "bytes": 1013,
+      "bytes": 1093,
       "mode": "100644",
       "path": "companions/cubic-framed-monodromy/Makefile",
       "rewrites": [],
       "role": "support",
-      "sha256": "b2549db723e7917c542aace081afb4a3cd626b8c20fc5af6021cf633c76853f6",
-      "source_blob": "bcbfce9357121177036a19fd0c72439aeca2ec98"
+      "sha256": "1501903cc44fa70097c6f0192f3f2ba5a9a5f7d71e644fe1a5037eec662bee66",
+      "source_blob": "de5e08e95d64b859c2c86c57d8f4fdff2b65b0df"
     },
     {
       "bytes": 193126,
@@ -2391,6 +2391,15 @@
       "role": "verification",
       "sha256": "55ccd7ccaa25141e87c160bf1c14d1fd4bfe685afbf8885bc3bb57a5b1f1d3e0",
       "source_blob": "0dcc5a96c400a4de7f5665c4e812812c9873daef"
+    },
+    {
+      "bytes": 1499,
+      "mode": "100644",
+      "path": "verification/lint_tex_spacing.py",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "511eb6837ec3b59769f4a2e3d76a9658403907f270246e9d739bec1afcc345e0",
+      "source_blob": "d6940a870427fa412f6e8309387f9cf9f6a6a0ea"
     },
     {
       "bytes": 4354,
