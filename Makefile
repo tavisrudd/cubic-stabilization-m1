@@ -12,7 +12,7 @@ JOBNAME := irrationality_after_one_stabilization
 
 all: manuscript
 
-check: formal-static manuscript warnings
+check: formal-static residue-check manuscript warnings
 
 formal-static:
 	$(PYTHON) lean/verification/check_formal_artifact.py --source-only
@@ -34,3 +34,7 @@ clean:
 
 distclean:
 	$(LATEXMK) -C -jobname=$(JOBNAME) $(SOURCE)
+
+.PHONY: residue-check
+residue-check:
+	uv run --with sympy==1.14.0 python verification/check_universal_residue.py
