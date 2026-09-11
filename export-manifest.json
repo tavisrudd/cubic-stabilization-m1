@@ -1,5 +1,5 @@
 {
-  "content_sha256": "999d0975a3cb65eedebaf740e7606dca0807b2e170de6d59776be0cee5de0789",
+  "content_sha256": "ed6ee2728f97f34423b0d5bc521d9bb95d2115ef0e6062b8809862652503898b",
   "excluded_path_count": 1,
   "excluded_release_outputs": [],
   "excluded_symlinks": [],
@@ -76,17 +76,17 @@
       "mode": "100644",
       "path": "PROVENANCE.md",
       "role": "provenance",
-      "sha256": "3028d014471ca2a7e9fc5a0c5a4bce0097bcf39d21c91dda277cc1d580abf4be",
+      "sha256": "748f13d8f7ad3dfb3f7b779b9e2044688e0262b735d4d543844be500b623ea02",
       "source_blob": null
     },
     {
-      "bytes": 5470,
+      "bytes": 6936,
       "mode": "100644",
       "path": "README.md",
       "rewrites": [],
       "role": "support",
-      "sha256": "cb0ae5718c562ec4fa6a2ab16142e3f8901bd3bf5184048135261288069063d2",
-      "source_blob": "e505908358c99760769b39dfc00e940587016408"
+      "sha256": "b1ba61fd3c087282498303cd4fa649efab403b25fd2f1bcb02865e95adf47788",
+      "source_blob": "79eb04d2ed27e088ea16e33c48c69d2ddd414664"
     },
     {
       "bytes": 5388,
@@ -2780,13 +2780,13 @@
       "source_blob": "cec9b9abb809f4510bef134d3f4aa776f121fedf"
     },
     {
-      "bytes": 30986,
+      "bytes": 32331,
       "mode": "100644",
       "path": "verification/README.md",
       "rewrites": [],
       "role": "verification",
-      "sha256": "8de85a40fbf440bb6cbdd4cfb8a587fc99022dfe317b77ff62a817118d949850",
-      "source_blob": "feb9015db4d7113818611d119054fe08359a29f2"
+      "sha256": "abb8d53b61dcd903370579fb2d6359b3b5e6b6096fc41c0f95f806322b6698a9",
+      "source_blob": "68daad4f58ba5322488e899cdd976d5686643d65"
     },
     {
       "bytes": 3378,
@@ -2933,13 +2933,13 @@
       "source_blob": "9177905bff8b1bb0c4e48b8fa76a216aa19ce24e"
     },
     {
-      "bytes": 4014,
+      "bytes": 4373,
       "mode": "100644",
       "path": "verification/fano-matrices/README.md",
       "rewrites": [],
       "role": "verification",
-      "sha256": "3a63c173b5646b967a885fb08fc75d64499cd5483771188d99181d0f3b4903b2",
-      "source_blob": "79fce33e91e9a8e11cded20910007b107d89748e"
+      "sha256": "4d114e7f0b7ff8dded18f33954f6a56a82c86144b3d04d533c4f5282d87d7760",
+      "source_blob": "92363157720657e7693fcc05d4b002f409fa1835"
     },
     {
       "bytes": 1120,
@@ -2947,26 +2947,26 @@
       "path": "verification/fano-matrices/SHA256SUMS",
       "rewrites": [],
       "role": "verification",
-      "sha256": "af5fb1bccb00a8aab2c32cfb7d445590448f6095f54977b6e9ca4e8422be2bf8",
-      "source_blob": "a4e3d217b98189d4cf346ee9dc4047a1b9cbbbcb"
+      "sha256": "6be6bdfef35b7ae56f65ac5976a18af1dfa2d651f39ded41f877207986afde93",
+      "source_blob": "927eb50746f01b3c172dd06fe62f7da2b6300c58"
     },
     {
-      "bytes": 21027,
+      "bytes": 21028,
       "mode": "100644",
       "path": "verification/fano-matrices/finite_checks.json",
       "rewrites": [],
       "role": "verification",
-      "sha256": "1c8981941cfb035a3a09f07edfcee64c4cd6c3518e37e66be410910d6b30a477",
-      "source_blob": "2e6b4ed0009fd366ff8b14ea096605c36ddc27c7"
+      "sha256": "b570dd430c0b25cc372d8f893c201616e38f0abf53b7724f26506e9507f026e9",
+      "source_blob": "cd2da7e572970cfa0973731a7a219d78b914070c"
     },
     {
-      "bytes": 12386,
+      "bytes": 12548,
       "mode": "100644",
       "path": "verification/fano-matrices/finite_checks.py",
       "rewrites": [],
       "role": "verification",
-      "sha256": "b0203ae22d6eb45076a9bd1894b53faa5a36a3640d2e135b97c15697794ff9b0",
-      "source_blob": "fd9b2b8015e42fa870ac728581922ac4cbeba7a1"
+      "sha256": "e0d38f02bec3021888bcb8edc628f42d4795d9cc74bac14f563559fe9e1bc3b7",
+      "source_blob": "11b8c4176ec8b22e77cff0a941521409d91d2f42"
     },
     {
       "bytes": 4432,
@@ -2992,8 +2992,8 @@
       "path": "verification/fano-matrices/manifest.json",
       "rewrites": [],
       "role": "verification",
-      "sha256": "4749c0ef1c84032d5d1f2e055cfabfe7f33f3df693fd7720072c9867ce6e40fc",
-      "source_blob": "2af37181000c0febeb2923963bff0ef3ed24eb74"
+      "sha256": "b3ee312b6c4f58b89c4e1c997e5dd3335e34f7f47b4d39f069e0b78ab5890873",
+      "source_blob": "fa36f008ebf6a4127027b398fa892b5f8758b33d"
     },
     {
       "bytes": 3905,
@@ -3001,8 +3001,8 @@
       "path": "verification/fano-matrices/reconstruction_check.json",
       "rewrites": [],
       "role": "verification",
-      "sha256": "f2de9a9ee222bf8ce61a19a0d951decc418f264ab17e784b5cad788166e1b149",
-      "source_blob": "57f97dd04c9ab046d1f331450cf07a7c92a0fdee"
+      "sha256": "bced861106ad831cefa73f687f776a5e9dc90e712f29bf2dd8b3d482f5036e77",
+      "source_blob": "ab321c76d2d96f42e9368fd3bedc393c1bac5936"
     },
     {
       "bytes": 5329,
