@@ -149,7 +149,30 @@ the aggregate to import each one, and computes terminal and signature coverage
 across their union.  This keeps the manuscript split visible without weakening
 the exact terminal census.
 
-Checked coverage snapshot: 67 claims; 14 absent; 26 fragmentary; 26 conditional; 1 complete; 319 reviewer terminals, of which 83 are machinery serving no current manuscript claim.
+Checked coverage snapshot: 79 claims; 25 absent; 27 fragmentary; 26 conditional; 1 complete; 371 reviewer terminals, of which 133 are machinery serving no current manuscript claim.
+
+The main reviewer interface includes `gradedBulkSource_equiv_completedSubring`
+and `gradedBulkCenterRingHom_injective`: the formal graded coefficient families
+are equivalent to a proved convolution subring, and the center map is an
+injective unital ring homomorphism. Negative bulk exponents may grow across
+curve classes; polynomiality of each coefficient layer is derived.
+
+`rationalWholeHodge_conservation` constructs a rational Hodge isomorphism of
+whole endpoints in rational bases with independently specified ranks.
+`rationalHodgeIsomorphism_inverse` verifies that the rational inverse preserves
+every Hodge projector. The complex comparison and rational Hodge-morphism
+scalar-extension identification concern the whole objects; no separate
+rational descent of splitting branches is required. The strengthened
+`rationalHodge_veryGeneralSource_cancellation` and
+`rationalHodge_arithmeticPartners_finite_geometricClasses` terminals use these
+actual rational Hodge isomorphisms. All these names lie in
+`TavisRuddFiniteGeom.Papers.CubicStabilizationM1`.
+
+The geometric endpoint realizations, source-restricted Torelli, geometric
+isogeny implication, uniform degree bound, finite torsion and polarization
+finiteness remain explicit premises. These algebraic and conditional terminals
+do not promote geometric manuscript claims to complete coverage.
+
 
 The Lean modules and axiom audit can be built with the pinned package command
 documented in `lean/README.md`.  Passing the captured audit output to
@@ -439,3 +462,19 @@ The adjacent JSON and SHA-256 manifest record the fixed cohomology basis,
 correct grading, spectral projector, residue and tagged collision factor.
 This supplements the printed proof and establishes no geometric comparison
 theorem.
+
+## Numerical classification and Hodge conservation
+
+The two-part main manuscript separates the numerical blowup proof from the
+Hodge-fixed-base refinement. The dependency graph records the specialized P1
+lemma, full even-bulk ruled calculation, rank-three persistence and odd
+selector, nine-family endpoints, Hodge comparison, and the Torelli/arithmetic
+consequences. Their twelve new geometric statements carry absent coverage;
+no existing terminal is promoted by their prose proofs.
+
+`make check` replays `verification/fano-matrices/finite_checks.py --check`
+and the independent Fraction implementation, then checks SHA256SUMS. The
+source-normalization replay needs the two externally pinned source scripts;
+its exact command and finite scope are in the bundle README. Mathematical
+classification, GW identification, deformation and actual comparison maps
+remain imported results or written proofs, not certificate conclusions.

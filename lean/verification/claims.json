@@ -28,7 +28,7 @@
       "objects": "An abstract block record over a supplied commutative coefficient ring: in rank two it stores a leading matrix, a modified-residue matrix, and a supplied exponent difference, while in every other rank it stores that rank and a proof that it is not two. The remaining objects are the free commutative monoid of these block classes and its natural-number-valued additive marker, smooth projective varieties through dimension four, smooth centers with their individual specialized QDM summands, projective-line stabilization, projective four-space, and a rationality predicate.",
       "hypotheses": "The supplied relation called regular isomorphism preserves the entire zero-or-one marker weight; assumed weak-factorization data and marker formulas supply every blowup and blowdown formula while retaining the individual center summands; every summand from a smooth center of dimension at most two has zero marker; the cubic marker equals one; the projective-line formula doubles it; projective four-space has marker zero; and rationality supplies the birational comparison.",
       "conclusion": "The stabilized cubic has nonzero marker, whereas projective four-space has marker zero; birational invariance therefore implies that the cubic threefold times one projective line is not rational.",
-      "cautions": "Conditional deduction. Lean defines the marker from the stored leading matrix and supplied exponent difference, constructs the quotient by the supplied regular-isomorphism relation, extends the marker to the free commutative monoid, proves the telescoping factorization argument with individual center summands kept separate, and obtains descent to birational classes. It does not prove that the stored matrices and exponent difference arise from a formal connection or from residue eigenvalues. Nor does it construct the cubic QDM, the Iritani or Iritani–Koto comparisons, weak factorization, or the geometric proofs of vanishing on low-dimensional centers. Those inputs remain explicit hypotheses of the formal theorem.",
+      "cautions": "Conditional deduction. Lean defines the marker from the stored leading matrix and supplied exponent difference, constructs the quotient by the supplied regular-isomorphism relation, extends the marker to the free commutative monoid, proves the telescoping factorization argument with individual center summands kept separate, and obtains descent to birational classes. It does not prove that the stored matrices and exponent difference arise from a formal connection or from residue eigenvalues. Nor does it construct the cubic QDM, the Iritani blowup comparison or the specialized small-product and full-bulk argument, weak factorization, or the geometric proofs of vanishing on low-dimensional centers. Those inputs remain explicit hypotheses of the formal theorem.",
       "statement_digest": "90fbb0916c1f7b4e7b7e57bb8ea581e3d45f3914e6a6f66d4aba23e241428af4",
       "terminal_digest": "c76771330994e3bf76753fc318ed5c8045703600a05a6f9c128db153d5eae0fa"
     },
@@ -880,10 +880,10 @@
         "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.occurrenceIndexedMarker_descends_to_birationalClasses"
       ],
       "objects": "Regular-isomorphism classes of typed blocks, their effective multisets, an additive marker valued in an arbitrary commutative additive monoid, abstract varieties and smooth centers, and a separately indexed family of specialized center summands.",
-      "hypotheses": "Assumed weak-factorization data and marker formulas supply blowup and blowdown chains in ambient dimension d, each blowup records its codimension and a separately indexed family of c-1 center summands, and every summand from a smooth center of dimension at most d-2 has zero marker contribution.",
+      "hypotheses": "Assumed weak-factorization data and blowup marker formulas supply blowup and blowdown chains in ambient dimension d, each blowup records its codimension and a separately indexed family of c-1 center summands, and every summand from a smooth center of dimension at most d-2 has zero marker contribution. No projective-bundle formula is required.",
       "conclusion": "The marker is the unique additive extension of its value on each block class; birationally related endpoints have equal markers; and the marker descends to the quotient set of birational classes.",
       "cautions": "Conditional deduction. Lean proves the free commutative-monoid construction, the arbitrary-monoid and arbitrary-dimension telescoping argument, preservation of the individual center summands, and descent to birational classes. Weak factorization and the geometric operation formulas are supplied as typed inputs rather than formalized from algebraic geometry. The QDM comparisons that produce those formulas remain outside this row and are registered under prop:qdm-operation-ledgers.",
-      "statement_digest": "9940726e078ec3a7f1f12b7d957025ed7b29d154e2a817db34b4d44b77b2bbba",
+      "statement_digest": "ce60f2403ec3a740825802036b7fd4cc9dfa5e7646318720f8d67074864c304d",
       "terminal_digest": "f8a38d7c98c400a29332ad3f24cebfe48c60bc38ea82dfa62f0f4850e602b042"
     },
     {
@@ -1002,13 +1002,17 @@
     },
     {
       "manuscript_label": "prop:universal-rank-two-residue",
-      "coverage": "absent",
-      "declarations": [],
-      "objects": "The matrix U_(a,b), grading D and its rank-two zero-primary block.",
-      "hypotheses": "Characteristic zero, s=2a+b and sq nonzero; a,b,q z-constant; normalized off-diagonal gauge.",
-      "conclusion": "The canonical residue is R_(a,b) and its discriminant is 4(b-2a)/(b+2a).",
-      "cautions": "The rational calculation and independent executable checks are not Lean formalizations.",
-      "statement_digest": "cca7673683e8adf2469c7ee94a15859fd7eb700ae9f6353b37f8d8f1678b6702"
+      "coverage": "fragment",
+      "declarations": [
+        "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.parameterizedRankTwo_finiteReduction",
+        "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.parameterizedRankTwo_normalizedGauge_and_modifiedResidue"
+      ],
+      "objects": "The explicit four-dimensional matrices, their rational invertible block basis, complete normalized coefficient-sequence gauge, and actual extracted rank-two power series.",
+      "hypotheses": "An arbitrary characteristic-zero field, parameters a,b,q with (2a+b) and q nonzero; no finite-gauge or discriminant identity is supplied.",
+      "conclusion": "The original Euler characteristic polynomial and basis identities hold; a full unique normalized two-block gauge exists and its extracted zero-block elementary-modification residue is R_(a,b), with exact discriminant 4(b-2a)/(2a+b).",
+      "cautions": "The full gauge and actual residue calculation are proved. The terminal does not identify the extracted block as the intrinsic generalized zero eigenspace of the original operator or assemble its coordinate-free canonical-lattice characterization; coverage therefore remains a fragment of the entire proposition.",
+      "statement_digest": "cca7673683e8adf2469c7ee94a15859fd7eb700ae9f6353b37f8d8f1678b6702",
+      "terminal_digest": "91968ab2621123f077f1fdaa34d2d2b84ff716654afbf7bc335c5cc404562e64"
     },
     {
       "manuscript_label": "thm:index-two-classification",
@@ -1029,6 +1033,126 @@
       "conclusion": "The specialization is strictly admissible but not graded-monomial; its scalar rank-two cluster has residue eigenvalues +/-1/6 and nu6=2, whereas the generic tagged connection has nu6=0. Unrestricted Hypothesis T is false.",
       "cautions": "No Lean formalization. The independent exact checker reconstructs the multiplication matrix from quantum relations and computes a polynomial spectral projector; the manuscript proves admissibility and the formal-monodromy interpretation. It neither refutes nor proves restricted T or R.",
       "statement_digest": "0f3166b80efdcaa89321705b5be917d8354884cf88b690fe828c144054c907d1"
+    },
+    {
+      "manuscript_label": "prop:numerical-blowup",
+      "coverage": "absent",
+      "declarations": [],
+      "objects": "The two intrinsic rank-two counts on smooth projective varieties.",
+      "hypotheses": "A smooth center of codimension at least two.",
+      "conclusion": "The blowup correction is codimension minus one copies of the center count.",
+      "cautions": "No reviewer terminal is assigned to this geometric statement. The written proof and imported sources establish the manuscript claim; finite certificates only check their stated algebraic domains. No additional Lean coverage is claimed by this integration.",
+      "statement_digest": "420ba8d2e14f267f3d68ab12c7560bf94d549aec1385b66668c986cea82f173e"
+    },
+    {
+      "manuscript_label": "lem:ruled-product",
+      "coverage": "absent",
+      "declarations": [],
+      "objects": "The full even bulk quantum connection of a curve times P1.",
+      "hypotheses": "A smooth projective complex curve, with independent numerical Novikov parameters.",
+      "conclusion": "Rank-two counts vanish; factors have rank at most two, with zero elliptic centered operator and zero higher-genus residue discriminant.",
+      "cautions": "No reviewer terminal is assigned to this geometric statement. The written proof and imported sources establish the manuscript claim; finite certificates only check their stated algebraic domains. No additional Lean coverage is claimed by this integration.",
+      "statement_digest": "208796178a5c252156d2667d199daffd13a5943061d2bd2d97efc461f4a2dc79"
+    },
+    {
+      "manuscript_label": "lem:special-projective-line",
+      "coverage": "absent",
+      "declarations": [],
+      "objects": "Small tensor quantum connections and original lattices.",
+      "hypotheses": "A smooth member of the nine detected Fano families with separated cyclic small even primary factors of ranks at most three over the generic Novikov field.",
+      "conclusion": "Each primary factor occurs twice after product with P1, with its rank and rank-two discriminant retained in all even bulk directions.",
+      "cautions": "No reviewer terminal is assigned to this geometric statement. The written proof and imported sources establish the manuscript claim; finite certificates only check their stated algebraic domains. No additional Lean coverage is claimed by this integration.",
+      "statement_digest": "0d0d076e0747a86a7a6bfbbda5ae04ef8fbd6191792186bcc6349030187e319b"
+    },
+    {
+      "manuscript_label": "lem:triple-primary-persistence",
+      "coverage": "absent",
+      "declarations": [],
+      "objects": "A separated rank-three formal quantum-connection cluster.",
+      "hypotheses": "Characteristic zero, full flatness and simple base poles; regular nilpotent centered operator at the closed point.",
+      "conclusion": "Cyclicity and nilpotence persist throughout the formal bulk germ.",
+      "cautions": "No reviewer terminal is assigned to this geometric statement. The written proof and imported sources establish the manuscript claim; finite certificates only check their stated algebraic domains. No additional Lean coverage is claimed by this integration.",
+      "statement_digest": "2033ac517b184f3e5943d92d927548141603a7db2590fdc1c9c89e15da99ca28"
+    },
+    {
+      "manuscript_label": "lem:odd-selector",
+      "coverage": "absent",
+      "declarations": [],
+      "objects": "Whole primary factors of full Frobenius supermodules over even bulk.",
+      "hypotheses": "Smooth projective complex varieties and smooth centers.",
+      "conclusion": "Even-rank-one factors have no odd part; rank-three odd dimension satisfies the blowup formula, vanishes through dimension two and is invariant on fourfolds.",
+      "cautions": "No reviewer terminal is assigned to this geometric statement. The written proof and imported sources establish the manuscript claim; finite certificates only check their stated algebraic domains. No additional Lean coverage is claimed by this integration.",
+      "statement_digest": "d5edb4b2eebddbebf59b71858726611b74d742fd5b5946f878c221bc9e695cba"
+    },
+    {
+      "manuscript_label": "prop:fano-endpoints",
+      "coverage": "absent",
+      "declarations": [],
+      "objects": "Nine detected Picard-rank-one Fano deformation families and their quantum connections.",
+      "hypotheses": "Every smooth complex member of index-two degrees 1,2,3 and index-one genera 2,3,4,5,6,8.",
+      "conclusion": "The repeated whole even factors, cyclicity, five residue discriminants and numerical counts are those in the displayed table.",
+      "cautions": "No reviewer terminal is assigned to this geometric statement. The written proof and imported sources establish the manuscript claim; finite certificates only check their stated algebraic domains. No additional Lean coverage is claimed by this integration.",
+      "statement_digest": "94019182977807135ccb696447bbb138ac1e5a266ec0526fd520b9229757870d"
+    },
+    {
+      "manuscript_label": "lem:hodge-fixed-comparison",
+      "coverage": "absent",
+      "declarations": [],
+      "objects": "Full cohomology fibers over Hodge-fixed reduced graded coefficient domains.",
+      "hypotheses": "One common rational reductive Hodge-group quotient and a smooth blowup center.",
+      "conclusion": "Actual comparisons faithfully transport primary factors, full representations and original and modified rank-two lattices.",
+      "cautions": "No reviewer terminal is assigned to this geometric statement. The written proof and imported sources establish the manuscript claim; finite certificates only check their stated algebraic domains. No additional Lean coverage is claimed by this integration.",
+      "statement_digest": "4e3d8beaf627a5a1d86c757882795f5939a18d2f6c864e5fa28c9ad3007af01e"
+    },
+    {
+      "manuscript_label": "prop:hodge-operations",
+      "coverage": "absent",
+      "declarations": [],
+      "objects": "The unlabelled sum of odd representations on selected rank-two and rank-three primary factors.",
+      "hypotheses": "One common rational reductive group for a projective weak factorization.",
+      "conclusion": "Blowup additivity, vanishing on points, curves and surfaces, and fourfold birational invariance.",
+      "cautions": "No reviewer terminal is assigned to this geometric statement. The written proof and imported sources establish the manuscript claim; finite certificates only check their stated algebraic domains. No additional Lean coverage is claimed by this integration.",
+      "statement_digest": "c27cb1a96f1b199f6c7e2b802fc81f5471aee94e5bdf21cfc277d4027ca7987f"
+    },
+    {
+      "manuscript_label": "thm:fano-one-step-classification",
+      "coverage": "absent",
+      "declarations": [],
+      "objects": "Smooth complex Picard-rank-one Fano threefolds.",
+      "hypotheses": "All seventeen smooth deformation families.",
+      "conclusion": "Rationality is equivalent to rationality after product with P1; exactly the eight listed families are rational.",
+      "cautions": "No reviewer terminal is assigned to this geometric statement. The written proof and imported sources establish the manuscript claim; finite certificates only check their stated algebraic domains. No additional Lean coverage is claimed by this integration.",
+      "statement_digest": "7be57b8715bd1d5d946d4a68504ec1b2b3f90fb8edbc5f223a5eea4719cd5434"
+    },
+    {
+      "manuscript_label": "thm:hodge-conservation",
+      "coverage": "absent",
+      "declarations": [],
+      "objects": "Rational third Hodge structures of the nine detected Fano families.",
+      "hypotheses": "Birational first stabilizations of any two smooth members in these families.",
+      "conclusion": "Their rational third Hodge structures are isomorphic, without integral or polarized identification.",
+      "cautions": "No reviewer terminal is assigned to this geometric statement. The written proof and imported sources establish the manuscript claim; finite certificates only check their stated algebraic domains. No additional Lean coverage is claimed by this integration.",
+      "statement_digest": "503c244a99b540171517e4922a5091b5cd62d81658155fc6aada3650252b63e0"
+    },
+    {
+      "manuscript_label": "cor:generic-cancellation",
+      "coverage": "absent",
+      "declarations": [],
+      "objects": "Smooth cubic or quartic hypersurfaces in P4.",
+      "hypotheses": "Very general source, arbitrary smooth target of the same degree.",
+      "conclusion": "Birational first stabilizations are equivalent to isomorphic sources.",
+      "cautions": "No reviewer terminal is assigned to this geometric statement. The written proof and imported sources establish the manuscript claim; finite certificates only check their stated algebraic domains. No additional Lean coverage is claimed by this integration.",
+      "statement_digest": "57776a827ffda96de224cbabb2c5b0f336a4a169319ff26aaefbbae26cfb2a35"
+    },
+    {
+      "manuscript_label": "cor:bounded-degree-partners",
+      "coverage": "absent",
+      "declarations": [],
+      "objects": "Smooth cubic threefolds over finite extensions of a fixed finitely generated characteristic-zero field.",
+      "hypotheses": "A fixed cubic and a positive bound on the extension degrees.",
+      "conclusion": "Finitely many geometric cubic isomorphism classes have geometrically birational first stabilization.",
+      "cautions": "No reviewer terminal is assigned to this geometric statement. The written proof and imported sources establish the manuscript claim; finite certificates only check their stated algebraic domains. No additional Lean coverage is claimed by this integration.",
+      "statement_digest": "c0e25a9c30c7fd3a75f86b9bd78f952a33a0ce6fd4d1aec1afee433417a372d7"
     }
   ],
   "machinery": [
@@ -1446,6 +1570,256 @@
       "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.atomicResidueDiscriminant_invariant_under_frame_change",
       "reason": "Formalizes auxiliary linear-algebra and formal-connection statements that provide no coverage of a labelled manuscript claim.",
       "terminal_digest": "76485992b885237b206670214c62cb9ea4fe2968be6580b70ac7769972b03638"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.rankTwo_modifiedResidueDiscriminant_invariant_under_regular_comparison",
+      "reason": "Proves exact modified-residue discriminant transport from regular horizontal comparison series and horizontal nondegenerate pairings. No current manuscript claim is assigned this terminal: the constant-spectrum statement additionally needs geometric factors, coefficient-domain transport and common-constant-field descent, which this formal matrix statement does not construct.",
+      "terminal_digest": "b72dde7df32e86ed0b5e2330735add3fe0cc69c9b5b092c44d44e5afc8baaac6"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.parameterizedRankTwo_fourDiscriminants",
+      "reason": "Exact rational specializations of the parameterized modified residue, including discriminant one. No geometric Fano family identification or one-stabilization classification is proved by these evaluations, and no current manuscript claim is discharged.",
+      "terminal_digest": "6c3100899f1cea4915a4a24179acba48a025d1a8e8cdaf815bda798a49b01aad"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.superPrimary_scalarEven_odd_eq_bot",
+      "reason": "Algebraic odd-vanishing lemma for a scalar-even Frobenius superalgebra. No primary idempotents, geometric quantum factors, or the proposed rank-three odd selector are constructed; this supports the planned full-super upgrade without discharging a current manuscript claim.",
+      "terminal_digest": "269b9f0926a8d872e6b6b17aaedd25c4197e57c384d26f5fa5eca0810237e6ad"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.superPrimary_eulerPolynomial_transfers_from_even",
+      "reason": "Polynomial identity transfer through the actual regular representation of an associative algebra. No primary decomposition or geometric parity model is constructed; this supports the planned whole-super-primary selection and serves no current manuscript claim.",
+      "terminal_digest": "7fb82ab0d7d0124bec71146f9fb9296a7a81ee3153e499fb2d5c369b041ae859"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.rankThree_cyclicCentralizer_and_traceIdentities",
+      "reason": "Finite cyclic rank-three centralizer and trace identities for the planned cluster-persistence argument. Differential-ideal stability, formal lowest-degree vanishing and geometric cluster realization are not constructed; this algebra does not discharge a current manuscript claim.",
+      "terminal_digest": "6a86d96164092c3cc492d8fca004282dda2a8287b2b4e1a3b371e88e10624d12"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.rankThree_cyclicNilpotent_persists_on_formal_germ",
+      "reason": "Formal rank-three nilpotent persistence follows from explicit commuting matrices and compressed flatness identities over a characteristic-zero power-series domain. The cyclic matrix, differential ideal stability and lowest-degree vanishing are proved; constructing a geometric quantum cluster and its cyclic frame is outside the statement. No current manuscript claim is discharged.",
+      "terminal_digest": "2b822427c79d406f6dac0b6645df2adc189939b1f31c5a57456404ba22376f2a"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.rankTwo_canonicalLattice_preserved_by_regularComparison",
+      "reason": "The adapted preimage lattice is constructed as a submodule and proved equal to the image of an injective elementary-modification map; regular horizontal comparison preserves it. No geometric sheaf is constructed.",
+      "terminal_digest": "fca69fba70fe9f6803c8f009c58e0ca5182a413888280bee5f5bfb2a7606f3e4"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.rankTwo_canonicalLattice_and_residue_coefficientExtension",
+      "reason": "Injective ring extension preserves and reflects canonical-lattice membership; actual modified residues and exact discriminants commute with coefficient maps. This is a free adapted formal model, without a geometric base-change theorem.",
+      "terminal_digest": "ba747b8092ed67b84ccb3ce9dbbbd461cd6523e8fe5eed2bbbf0ad2c91391a07"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.seventeenCountingMatrices_charpoly_and_cyclicBasis",
+      "reason": "Exhaustively checks characteristic polynomials and actual determinant-one cyclic bases for seventeen explicitly defined rational matrices. Geometric quantum-product identification, primary-rank interpretation, family classification and rationality do not follow from this numerical table alone.",
+      "terminal_digest": "95fe28b4321722dd9b794c155ccb9b6946540481c8034e9569008a936d2d2108"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.superPrimary_polynomialProjectors_exist",
+      "reason": "Constructs actual complementary orthogonal idempotents by polynomial evaluation from a coprime annihilating factorization. Geometric quantum algebras and their primary factors are not supplied by this algebraic construction.",
+      "terminal_digest": "7af3988b8fa72d4dadf1560f400b1eebc124d1a83c8794013a19691b53067e24"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.superPrimary_tracePairing_restricts_nondegenerately",
+      "reason": "Derives nondegeneracy of the trace pairing on the actual multiplication image of a central idempotent from whole-algebra nondegeneracy. No primary quantum factor is geometrically constructed.",
+      "terminal_digest": "651f894d9ada43011c2e5a9cddbe3cf88ae8e787f90b184f227491836c202573"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.superPrimary_oddPairing_nondegenerate_and_even",
+      "reason": "Derives nondegeneracy and even dimension of the full odd part from the whole finite-dimensional algebra trace pairing and explicit parity axioms. No geometric super-primary factor is constructed.",
+      "terminal_digest": "5776532d53061796002391caa98463c465e2754c58374fb906b93633060b5d43"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.superPrimary_polynomialProjection_preserves_submodule",
+      "reason": "Polynomial evaluation preserves any submodule stable under Euler multiplication, including an explicit parity submodule. Geometric Euler and projector identifications remain outside the statement.",
+      "terminal_digest": "1b6ae2999cbd298a683d10310a114ebe569583f2deaa3b8df4599b5236ad4ff4"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.superPrimary_fullSummandDecomposition",
+      "reason": "Constructs the actual linear equivalence from the full algebra to complementary orthogonal idempotent images, with the forward action proved equal to multiplication. It is not a fixed-vector construction.",
+      "terminal_digest": "6fe33af180b8caedbb0080cab0a5143631a2ba48e83c3bd9379b3277b4f59ee9"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.rankThreeCountingMatrices_split_and_formalGauge",
+      "reason": "Exhaustively checks actual invertible bases and leading rank-three-plus-one matrix forms for four rational table entries, and constructs full normalized gauges for systems with those leading blocks. No Hodge numbers, geometric family identification or quantum deformation is inferred.",
+      "terminal_digest": "93e08d8eb3f5ed39553912fe305c81847f8b45f1be52175b94fc0bcee0c86758"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.superPrimary_evenRankOne_forces_odd_zero",
+      "reason": "Derives zero odd subspace for an actual central-idempotent image with even dimension one. Scalar spanning and restricted trace nondegeneracy are proved from the dimension and whole-algebra hypotheses, not assumed.",
+      "terminal_digest": "b97266ce9fd65cc9ac5841a5887934ea4e08dc3877370eac65b91fcf3aa5e215"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.superPrimary_fullOdd_allocates_to_distinguished_factor",
+      "reason": "Derives allocation of the full odd subspace to the distinguished image from a finite parity-preserving central-idempotent decomposition and even dimension one of all other images. Vanishing of the other odd images and restricted trace nondegeneracy are proved, not supplied. Geometric primary decomposition remains external.",
+      "terminal_digest": "9a3c7dfd3c49752d200c43087258986aa44624f8433b044fdfb7aa3725930b16"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.nineRankTwoConnections_exactResidue_certificates",
+      "reason": "Exact finite matrix and complete formal-gauge certificates for all nine rank-two counting cases; geometric identifications are separate.",
+      "terminal_digest": "a103fe07992cef7cbf3c67af2de28edb355ead453c3dee0732e8b9350ac5c74f"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.exactResidueSpectrum_detects_one_and_extends_coefficients",
+      "reason": "Effective exact-residue spectrum retains discriminant one and transports labels along injective coefficient maps.",
+      "terminal_digest": "bc9cdb16ef28a1109f5a054ea4ab9db3658adaf84c435a0841f7bb428c286065"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.exactResidueSpectrum_invariant_under_regularComparison",
+      "reason": "Exact-spectrum invariance follows from actual regular horizontal comparisons and inverses.",
+      "terminal_digest": "da69a9b9c9312fe952fc34806384b9050bed732937ce5286144af3c78387210f"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.rankThreeOddSelector_invariant_under_fullFiberEquivalence",
+      "reason": "The odd selector uses full even and odd subspaces and is preserved by their linear equivalences.",
+      "terminal_digest": "2a73507c0cbefeb5022a3d15a418a7d5d2823b6240c109f1fa36fa02f9a672ae"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.exactPrimaryLedger_fold_from_regularComparisons",
+      "reason": "Constructs the additive exact-primary fold from concrete comparison evidence and computes singleton weights.",
+      "terminal_digest": "1b4936c338c8d8b201fbfe4cfc54e29288eaa35536952ce2a24f2a85c275d19d"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.completedMultivariateExponentialPushforward_injective",
+      "reason": "Injectivity of the constructed multivariate exponential pushforward on actual completed coefficient families, proved by integral line restriction.",
+      "terminal_digest": "3c76d49a44e699f2ebfb22bb1ebfe2e73e9e17c293bc982f652e957c7a6773a4"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.equivariantCoordinateChange_fixedLoci",
+      "reason": "An equivariant coordinate equivalence restricts to an equivalence of actual fixed base loci, with inverse equivariance derived.",
+      "terminal_digest": "4316c462d477d413a81a37d7c66703f6657386ad9897e60360b9119f3e80a812"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.polynomialCoordinateExtension_and_translation_injective",
+      "reason": "Injective coefficient extension followed by polynomial coordinate translation remains injective.",
+      "terminal_digest": "3cd887bb01c546be0265a5b7ee9df742b7809a09535bef1a277130c31c32a86a"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.faithfulCompletedExponentialRingMap_with_polynomialCoordinates",
+      "reason": "The explicitly constructed unital completed convolution-ring map and its polynomial translation extension are injective.",
+      "terminal_digest": "77e2202fa378a4a5bef3572a8111a9ad2160e806af6e85fd909b74200e807a8f"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.independentOccurrenceShifts_separate_finiteOperator",
+      "reason": "The actual independent-shift operator determinant is nonzero and remains so under faithful scalar extension.",
+      "terminal_digest": "904a769b6a3c9b0f2043a41718bf971f4b764d559e866b040fcae2fc2ed747b9"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.faithfulCoefficientMap_on_imageLocalizations",
+      "reason": "Injective coefficient maps remain injective on actual localizations at source denominators and their images.",
+      "terminal_digest": "931e5b67bdfed0956658825ca4f93a1019cf8b71e4730dcf93bf0bc67766e7c7"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.nefSurfaceLinearSeed_nilpotence_and_exactSelector_zero",
+      "reason": "Derives nilpotence and exact-selector nullity from finite filtration increase and the positive-line isotropic contradiction.",
+      "terminal_digest": "c12529487bc7a90e793fbdc7983dbacc336e41627fa2c224932aa982dbb6575f"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.lowDimensionalPrimaryExpressions_exactSelector_zero",
+      "reason": "Computes zero exact-primary weight for curve and surface block expressions, including scalar-leading rank-two blocks with full odd fibers.",
+      "terminal_digest": "6419cf9554a18959f4f40e0d25f04584047ec5bad8a059dc35f541f94ca93b9b"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.exactPrimaryMarker_birational_from_lowDimensional_realizations",
+      "reason": "Derives exact-primary birational invariance from low-dimensional block-ledger realizations and projective weak factorization, without zero-marker inputs.",
+      "terminal_digest": "7b5b5368e602e932d7face13bfd78932a41485841b0ce45253ab72866355ad63"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.seventeenExactSignatures_nine_positive_eight_controls",
+      "reason": "The exact finite table has nine positive and eight zero labels, and doubling preserves positivity; geometric endpoint identifications remain external.",
+      "terminal_digest": "9e39e4e2d20f2a72407583dd6eeee7b0a723da07e0eb65a4fc1a1acf7bf64d7b"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.formalIdempotent_conjugacy_over_multivariateBase",
+      "reason": "Proves conjugacy of actual multivariate formal idempotents over a possibly noncommutative coefficient ring. A geometric equivariant endomorphism realization is not constructed.",
+      "terminal_digest": "f1210d03ea0c6e0b52a4fe073550f11740da8312f5edf401efcece358d8b593a"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.fullEquivariantProjectorImages_representationEquiv",
+      "reason": "Constructs an actual bundled representation equivalence of full images from an equivariant intertwining linear equivalence. Geometric projector and comparison realizations remain external.",
+      "terminal_digest": "933fd0db7cd8cd9acafa555dd201deaa099cdd6b5204166578b0406800478fb7"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.semisimpleObjects_cancel_doubled_iso",
+      "reason": "Cancels doubling for actual categorical objects in an explicit semisimple coordinate category of finite division-ring modules; realization by rational Hodge structures is separate.",
+      "terminal_digest": "a4e2faaa3206ec4c5ca675c5d1d4c391036783bc695c8df115007e3aab426193"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.gradedBulkCenterMap_injective",
+      "reason": "Proves faithfulness on actual graded completed bulk families with polynomial layers derived from grading bounds. This terminal is stated on coefficient families; the graded source ring model and injective unital homomorphism are separately verified. Geometric QDM-base identification remains external.",
+      "terminal_digest": "5c9c40300fea60891ca6d11a6de95e652abaf9342291c40323208f3078684cab"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.wholeOddLedger_zero_of_numericZero",
+      "reason": "Derives vanishing of the full semisimple-object fold from numerical vanishing using odd-rank parity and faithful realization dimension bounds, with no supplied Hodge-weight vanishing.",
+      "terminal_digest": "b3650b40b153a5375132b306b58849c4af189af14760c5bee65830dd6b4fae4c"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.rationalMorphismSpace_contains_invertible",
+      "reason": "Descends an invertible scalar-extended finite matrix combination to an actual invertible matrix in the original infinite-field morphism subspace. Geometric scalar extension of Hodge morphism spaces remains external.",
+      "terminal_digest": "fbd7a975a11b3aae1de2c21af506674701b3bc5770ffec01290213a7fbad2bbb"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.pureWeightPeriodization_injective",
+      "reason": "Proves injectivity of multiplicity periodization on one fixed weight for an actual integral twist action with weight shift minus twice the twist. Hodge simple labels and weights remain external.",
+      "terminal_digest": "f17025a6d3e5578b5e98725e152dad346a47421d2101131f19436041e75bd573"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.wholeOddObjects_conserved_under_stabilizedBirationality",
+      "reason": "Assembles actual low-dimensional primary realizations, dimension-four weak factorization, doubled endpoint objects and semisimple categorical cancellation. Geometric quantum and Hodge realization inputs remain supplied.",
+      "terminal_digest": "05a8ab3f7cdc37c75865c52388a5679026d837489ad7fc6fffdadd53190b8805"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.veryGeneralSource_stabilizedCancellation",
+      "reason": "Composes the proved whole-object conservation with an explicitly source-restricted reconstruction premise. The source is very general and the target arbitrary smooth in the family; the source theorem itself remains external.",
+      "terminal_digest": "31241f770c04c545c7d0205c0abe5d3f3153a1d6e007dd49f2c0d1cfb769e97b"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.arithmeticStabilizationPartners_finite_geometricClasses",
+      "reason": "Proves finiteness of geometric partner classes over all model extensions of bounded degree, using proved conservation and finite-kernel bookkeeping. Cohomology-to-isogeny, uniform kernel bound, finite torsion, finite polarization fibers and geometric Torelli are separate supplied hypotheses.",
+      "terminal_digest": "98a0de598e2ca01bd52081ccc3c3a56aaf97d6aec2ccb00b81392a6bda0e40df"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.seventeenFamilies_rational_iff_control",
+      "reason": "Derives the nine/eight dichotomy from actual normalized counting endpoint blocks, low-dimensional realizations and weak factorization. Geometric family identification, rationality of the eight controls and rational stabilization remain supplied; no nine-case irrationality premise occurs.",
+      "terminal_digest": "577938ddbb72c1e9f4bac6a772f8bec71fd24080c96c65c6b1e6527cb99aaa7e"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.realizedHodgeObjects_conserved_under_stabilizedBirationality",
+      "reason": "Transports proved whole-object conservation to actual target-category endpoint objects through a supplied semisimple category equivalence. The rational Hodge category and endpoint realizations remain explicit imports; integral and polarized isomorphisms are not inferred.",
+      "terminal_digest": "54effa3f481292ac5b79cd93554c661c505c7d75c8999c30d059a5bcc4ca2e0b"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.gradedBulkSource_equiv_completedSubring",
+      "reason": "Constructs a coefficient-preserving equivalence between actual formal graded bulk families and a proved subring of the completed polynomial-coefficient ring. Polynomial layer finiteness and convolution closure are derived from grading bounds, not imposed as extra support premises.",
+      "terminal_digest": "b33f68c78dac2bbdb3c623cdaf40ab08ac5b126fe33afaa2330961bb88361aea"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.gradedBulkCenterRingHom_injective",
+      "reason": "Proves injectivity of the actual unital ring homomorphism on the graded completed source subring, which is coefficientwise equivalent to the original raw formal-family source. Geometric identification with QDM bases remains external.",
+      "terminal_digest": "08441cc938c0f3ef6e09418b174d6d5cbd5f78abd0e424f3ded05fba7dde1471"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.rationalHodgeIsomorphism_inverse",
+      "reason": "Constructs the actual rational inverse of an isomorphism of effective pure weight-three rational Hodge objects represented by orthogonal conjugate complex projectors in rational bases. Every Hodge projector is intertwined; no integral or polarized isomorphism is asserted.",
+      "terminal_digest": "2ed8c4e613aca717540da92336b04f8c769e891926c0a2081073b8f6aff3ce3c"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.rationalWholeHodge_conservation",
+      "reason": "Derives an actual rational Hodge matrix isomorphism for whole stabilized endpoints with independently specified ranks, using actual conserved semisimple objects, a whole complex comparison and scalar-extension fullness of the rational Hodge-morphism space. No rational descent of individually labelled branches or global complex-to-rational category equivalence is required. Geometric endpoint and comparison realization remains supplied.",
+      "terminal_digest": "67eafda64ec6aa63b4d65fa4104b53569ab21034a3e8ab1b5fc411106ef0f4fb"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.rationalHodge_veryGeneralSource_cancellation",
+      "reason": "Composes the constructed rational Hodge isomorphism with an explicit source-restricted Torelli premise: very general source and arbitrary smooth target in the fixed-rank family. Geometric endpoint realization and the Torelli source theorem remain external.",
+      "terminal_digest": "771e0afafc48f15d740fd7c7901c925e9d9a68d51a58e5613e7c5ee54503dfd0"
+    },
+    {
+      "declaration": "TavisRuddFiniteGeom.Papers.CubicStabilizationM1.rationalHodge_arithmeticPartners_finite_geometricClasses",
+      "reason": "Uses the constructed rational Hodge isomorphism as input to the separate geometric-isogeny premise, then proves geometric partner finiteness over all model extensions of bounded degree through bounded kernels, finite torsion, polarization fibers and Torelli. Geometric realization and arithmetic source bounds remain explicit; twists and the isogeny field of definition are not bounded.",
+      "terminal_digest": "40a4efe02ec03b02c48d28da692c387439c4391e6ea7c19d50cfd4407c3829b1"
     }
   ]
 }
