@@ -1,7 +1,7 @@
 # Export provenance
 
 - Public repository: `https://github.com/tavisrudd/cubic-stabilization-m1`
-- Exported-content SHA-256: `ed6ee2728f97f34423b0d5bc521d9bb95d2115ef0e6062b8809862652503898b`
+- Exported-content SHA-256: `2ba0657193e4cd100c396af4ad6b184bc21caee2ab8a1c87b93faa7c0217f526`
 - Export method: deterministic, content-addressed source materialization.
 - File hashes are recorded in `export-manifest.json`; the public Git commit is the repository's own `git rev-parse HEAD`.
 - Private source-authority and exporter-registry identifiers are deliberately not part of this public provenance record.
